@@ -9,7 +9,6 @@ def head(input_list):
       >>> head(['Jan', 'Feb', 'Mar'])
       'Jan'
     """
-    
     return input_list[0]
 
 
@@ -23,7 +22,6 @@ def tail(input_list):
 
     """
     del input_list[0]
-
     return input_list
 
 
@@ -36,7 +34,6 @@ def last(input_list):
     'Mar'
 
     """
-
     return input_list[-1]
 
 
@@ -49,8 +46,8 @@ def top(input_list):
     ['Jan', 'Feb']
 
     """
-
-    return []
+    del input_list[-1]
+    return input_list
 
 
 def first_three(input_list):
