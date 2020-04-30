@@ -61,7 +61,7 @@ def first_three(input_list):
     """
     return input_list[0:3]
 
-
+input_list = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 def last_five(input_list):
     """Return the last five elements of the input list.
 
@@ -71,9 +71,10 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
-
-    return []
-
+    last_value = input_list[-1]
+    last_values = input_list[-5:-1]
+    last_values.append(last_value)
+    return last_values
 
 def middle(input_list):
     """Return all elements of input_list except the first two and the last two.
