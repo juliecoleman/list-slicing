@@ -1,5 +1,5 @@
 """Utilities for manipulating lists."""
-input_list = ['Jan', 'Feb', 'Mar', 'April', 'May', 'June']
+input_list = ['Jan', 'Feb', 'Mar']
 
 def head(input_list):
     """Return the first item of the input list.
@@ -23,7 +23,7 @@ def tail(input_list):
 
     """
 
-    return []
+    return del input_list[0]
 
 
 def last(input_list):
