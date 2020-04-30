@@ -71,10 +71,7 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
-    last_value = input_list[-1]
-    last_values = input_list[-5:-1]
-    last_values.append(last_value)
-    return last_values
+    return input_list[-5:]
 
 def middle(input_list):
     """Return all elements of input_list except the first two and the last two.
@@ -84,11 +81,8 @@ def middle(input_list):
     >>> middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
     [6, 9, 12, 15, 18, 21]
     """
-    del input_list[0:2]
-    del input_list[-1]
-    del input_list[-1]
 
-    return input_list
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -117,7 +111,7 @@ def inner_four_end(input_list):
 
     """
 
-    return input_list[4:8]
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -166,7 +160,7 @@ def replace_middle(input_list):
     True
 
     """
-
+    input_list[2:-2] = [42,37]
     pass
 
 
@@ -181,7 +175,8 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
+    input_list[2:3] = []
+    input_list[5:6] = []
     pass
 
 
@@ -198,7 +193,7 @@ def delete_middle(input_list):
     True
 
     """
-
+    input_list[2:-2] = []
     pass
 
 
